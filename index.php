@@ -1,4 +1,4 @@
-<?php require_once "config/conexion.php"; ?>
+<!-- <?php require_once "config/conexion.php"; ?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,11 +30,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <a href="#" class="nav-link text-info" category="all">Todo</a>
-                        <?php
+                        <!-- <?php
                         $query = mysqli_query($conexion, "SELECT * FROM categorias");
                         while ($data = mysqli_fetch_assoc($query)) { ?>
                             <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><?php echo $data['categoria']; ?></a>
-                        <?php } ?>
+                        <?php } ?> -->
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,7 @@
     <section class="py-5">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <?php
+                <!-- <?php
                 $query = mysqli_query($conexion, "SELECT p.*, c.id AS id_cat, c.categoria FROM productos p INNER JOIN categorias c ON c.id = p.id_categoria");
                 $result = mysqli_num_rows($query);
                 if ($result > 0) {
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                 <?php  }
-                } ?>
+                } ?> -->
 
             </div>
         </div>
